@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Intenciones_mucoes</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mostrarmensaje_mucoes">Mostrarmensaje_mucoes</string>
+</resources>
