@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/imageView"
+        android:layout_weight="1"
+        android:background="@drawable/mezquita"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/mezquita"
+        android:layout_marginBottom="20dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/scrollView"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="La Mezquita-Catedral de Córdoba es el monumento más importante de todo el Occidente islámico y uno de los más asombrosos del mundo. En su historia se resume la evolución completa del estilo omeya en España, además de los estilos gótico, renacentista y barroco de la construcción cristiana.
+
+             La Mezquita-catedral de Córdoba, antes «Santa María Madre de Dios» o «Gran Mezquita de Córdoba», actualmente conocida como la Catedral de la Asunción de Nuestra Señora de forma eclesiástica, o simplemente Mezquita de Córdoba de forma general, es un edificio de la ciudad de Córdoba, España. Se trata de uno de los monumentos más importantes de la arquitectura islámica en España, así como del más emblemático ejemplo de arte omeya hispanomusulmán. Desde el siglo XIII y hasta la actualidad es un templo católico, la iglesia catedral de la diócesis de Córdoba. Está declarado Patrimonio Cultural de la Humanidad como parte del centro histórico de la ciudad.
+
+
+     Se empezó a construir como mezquita en el año 785, tras la invasión musulmana de la península Ibérica, en el lugar que ocupaba la basílica visigótica de San Vicente Mártir, el templo cristiano más importante de la ciudad, construido a su vez sobre un templo romano dedicado a Jano. El edificio fue objeto de ampliaciones durante el Emirato de Córdoba y el Califato de Córdoba. En 1238, tras la Reconquista, se llevó a cabo su consagración como catedral con la ordenación episcopal de su primer obispo, Lope de Fitero. En 1523 se realizó la mayor alteración del monumento con la construcción de una basílica cruciforme renacentista de estilo plateresco en el centro del edificio musulmán. Hoy todo el conjunto constituye el monumento más importante de Córdoba, y también de toda la arquitectura andalusí, junto con la Alhambra.
+
+
+     Con 23.400 metros cuadrados, fue la segunda mezquita más grande del mundo en superficie, por detrás de la Mezquita de La Meca, siendo sólo alcanzada posteriormente por la Mezquita Azul (Estambul, 1588). Una de sus principales características es que su muro de la qibla no fue orientado hacia La Meca, sino 51º grados más hacia el sur, algo habitual en las mezquitas de Al-Ándalus.
+
+
+     El edificio alberga el cabildo catedralicio de la Diócesis de Córdoba, además está prohibido cualquier culto colectivo o rezo organizado no católico. Está declarado Bien de interés cultural en la categoría de monumento y es también uno de los espacios turísticos más visitados de España y se le ha considerado el primero de los 12 Tesoros de España. Ha sido premiado como el mejor sitio de interés turístico de Europa y sexto del mundo según un concurso de TripAdvisor."
+            android:id="@+id/textView"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+    </ScrollView>
+
+</LinearLayout>
