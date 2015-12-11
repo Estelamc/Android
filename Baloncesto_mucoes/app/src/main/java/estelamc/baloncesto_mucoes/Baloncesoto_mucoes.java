@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+<<<<<<< HEAD
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -29,10 +30,16 @@ public class Baloncesoto_mucoes extends AppCompatActivity {
         textB = (TextView)findViewById(R.id.textoB);
     }
 
+=======
+
+public class Baloncesoto_mucoes extends AppCompatActivity {
+
+>>>>>>> origin/master
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_baloncesoto_mucoes);
+<<<<<<< HEAD
 
         cargarComponentes();
 
@@ -117,6 +124,8 @@ public class Baloncesoto_mucoes extends AppCompatActivity {
             }
         });
 
+=======
+>>>>>>> origin/master
     }
 
     @Override
