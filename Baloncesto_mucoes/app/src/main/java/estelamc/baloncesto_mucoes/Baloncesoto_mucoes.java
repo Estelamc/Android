@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-<<<<<<< HEAD
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -30,16 +29,10 @@ public class Baloncesoto_mucoes extends AppCompatActivity {
         textB = (TextView)findViewById(R.id.textoB);
     }
 
-=======
-
-public class Baloncesoto_mucoes extends AppCompatActivity {
-
->>>>>>> origin/master
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_baloncesoto_mucoes);
-<<<<<<< HEAD
 
         cargarComponentes();
 
@@ -74,8 +67,10 @@ public class Baloncesoto_mucoes extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 resultadoA = Integer.parseInt(textA.getText().toString());
-                resultadoA -= 1;
-                textA.setText(Integer.toString(resultadoA));
+                if(resultadoA>0) {
+                    resultadoA -= 1;
+                    textA.setText(Integer.toString(resultadoA));
+                }
             }
         });
 
@@ -107,12 +102,14 @@ public class Baloncesoto_mucoes extends AppCompatActivity {
             }
         });
 
-        botonRA.setOnClickListener(new View.OnClickListener() {
+        botonRB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 resultadoB = Integer.parseInt(textB.getText().toString());
-                resultadoB -= 1;
-                textB.setText(Integer.toString(resultadoB));
+                if(resultadoB>0) {
+                    resultadoB -= 1;
+                    textB.setText(Integer.toString(resultadoB));
+                }
             }
         });
 
@@ -124,8 +121,6 @@ public class Baloncesoto_mucoes extends AppCompatActivity {
             }
         });
 
-=======
->>>>>>> origin/master
     }
 
     @Override
