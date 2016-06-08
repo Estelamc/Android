@@ -12,7 +12,7 @@
         android:id="@+id/bOveja"
         android:contentDescription="@string/oveja"
         android:background="@color/transparente"
-        android:src="@drawable/o"
+        android:src="@drawable/boton1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
@@ -21,7 +21,7 @@
         android:id="@+id/bCaballo"
         android:contentDescription="@string/caballo"
         android:background="@color/transparente"
-        android:src="@drawable/caballo"
+        android:src="@drawable/boton2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
@@ -30,7 +30,7 @@
         android:id="@+id/bCerdo"
         android:contentDescription="@string/cerdo"
         android:background="@color/transparente"
-        android:src="@drawable/cerdo"
+        android:src="@drawable/boton3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
