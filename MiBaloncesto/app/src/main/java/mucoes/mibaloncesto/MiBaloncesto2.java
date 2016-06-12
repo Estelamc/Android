@@ -1,5 +1,7 @@
 package mucoes.mibaloncesto;
 
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -35,6 +37,10 @@ public class MiBaloncesto2 extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mi_baloncesto2);
+
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
 
         cargarComponentes();
 
@@ -85,11 +91,15 @@ public class MiBaloncesto2 extends AppCompatActivity implements View.OnClickList
                 pB.setText(Integer.toString(resultadoB));
                 break;
             case R.id.bRA:
-                resultadoA -= 1;
+                if (resultadoA > 0){
+                    resultadoA-=1;
+                }
                 pA.setText(Integer.toString(resultadoA));
                 break;
             case R.id.bRB:
-                resultadoB -= 1;
+                if (resultadoB > 0){
+                    resultadoB-=1;
+                }
                 pB.setText(Integer.toString(resultadoB));
                 break;
             case R.id.bReset:

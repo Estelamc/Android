@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    android:background="@drawable/fondo3"
+    android:background="@drawable/cancha"
     tools:context="mucoes.mibaloncesto.MiBaloncesto2">
 
     <LinearLayout
@@ -23,7 +23,7 @@
             android:id="@+id/b1A"
             android:layout_weight="1"
             android:layout_gravity="center"
-            android:textSize="34dp"
+            android:textSize="25dp"
             android:background="#3962b9"
             android:textColor="#222038"
             android:layout_margin="5dp" />
@@ -36,7 +36,7 @@
             android:id="@+id/b2A"
             android:layout_weight="1"
             android:layout_gravity="center"
-            android:textSize="34dp"
+            android:textSize="25dp"
             android:background="#3962b9"
             android:textColor="#222038"
             android:layout_margin="5dp" />
@@ -49,7 +49,7 @@
             android:id="@+id/b3A"
             android:layout_weight="1"
             android:layout_gravity="center"
-            android:textSize="34dp"
+            android:textSize="25dp"
             android:background="#3962b9"
             android:textColor="#222038"
             android:layout_margin="5dp" />
@@ -62,7 +62,7 @@
             android:id="@+id/bRA"
             android:layout_weight="1"
             android:layout_gravity="center"
-            android:textSize="34dp"
+            android:textSize="25dp"
             android:background="#222038"
             android:textColor="#ffffff"
             android:layout_margin="5dp" />
@@ -161,7 +161,7 @@
                 android:layout_height="wrap_content"
                 android:text="Reset"
                 android:id="@+id/bReset"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:background="#222038"
                 android:textColor="#ffffff" />
         </LinearLayout>
@@ -183,7 +183,7 @@
             android:id="@+id/b1B"
             android:layout_weight="1"
             android:layout_gravity="center"
-            android:textSize="34dp"
+            android:textSize="25dp"
             android:background="#3962b9"
             android:textColor="#222038"
             android:layout_margin="5dp" />
@@ -196,7 +196,7 @@
             android:id="@+id/b2B"
             android:layout_weight="1"
             android:layout_gravity="center"
-            android:textSize="34dp"
+            android:textSize="25dp"
             android:background="#3962b9"
             android:textColor="#222038"
             android:layout_margin="5dp" />
@@ -209,7 +209,7 @@
             android:id="@+id/b3B"
             android:layout_weight="1"
             android:layout_gravity="center"
-            android:textSize="34dp"
+            android:textSize="25dp"
             android:background="#3962b9"
             android:textColor="#222038"
             android:layout_margin="5dp" />
@@ -222,7 +222,7 @@
             android:id="@+id/bRB"
             android:layout_weight="1"
             android:layout_gravity="center"
-            android:textSize="34dp"
+            android:textSize="25dp"
             android:background="#222038"
             android:textColor="#ffffff"
             android:layout_margin="5dp" />
