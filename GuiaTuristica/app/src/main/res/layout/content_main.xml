@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="mucoes.guiaturistica.MainActivity">
+
+    <TextView
+        android:id="@+id/nombreM"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Small Text"
+        android:layout_weight="0.1" />
+
+    <ImageView
+        android:id="@+id/imagenM"
+        android:contentDescription="@string/seleccionar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1" />
+
+    <ScrollView android:id="@+id/textoArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/descripcionM"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="New Text"
+            android:layout_gravity="end"/>
+    </ScrollView>
+</LinearLayout>
