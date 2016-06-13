@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private ListView listado;
-    private ImageView imagen;
+    //private ImageView imagen;
     private Monumento[] monumentos = new Monumento[]{
             new Monumento("Mezquita", "Es Patrimonio de la Humanidad desde 1984, siendo el monumento de más importancia"+
                     " de todo el Occidente islámico y uno de los más asombrosos del mundo. En su historia se resume la "+
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void cargarComponentes(){
         listado = (ListView)findViewById(R.id.lista);
-        imagen = (ImageView)findViewById(R.id.imagenM);
+       // imagen = (ImageView)findViewById(R.id.imagenM);
     }
 
     @Override
@@ -49,10 +49,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         cargarComponentes();
-
-        // Cabecera
-        View cabecera = getLayoutInflater().inflate(R.layout.listado, null);
-        listado.addHeaderView(cabecera);
 
         // Adaptador
         Adaptador adaptador = new Adaptador(this, monumentos);
@@ -81,18 +77,18 @@ public class MainActivity extends AppCompatActivity {
             super(contenido, R.layout.listado, monumentos);
         }
 
-        public View getView(int position, View convertView, ViewGroup parent) {
+       public View getView(int posicion, View convertView, ViewGroup padre) {
             LayoutInflater inflater = LayoutInflater.from(getContext());
             View elemento = inflater.inflate(R.layout.listado, null);
 
             TextView nombreE = (TextView)elemento.findViewById(R.id.nombreEt);
-            nombreE.setText(monumentos[position].getNombre());
+            nombreE.setText(monumentos[posicion].getNombre());
 
             TextView descripcionE = (TextView)elemento.findViewById(R.id.descripcionEt);
-            descripcionE.setText(monumentos[position].getDescripcion());
+            descripcionE.setText(monumentos[posicion].getDescripcion());
 
             ImageView imagenI = (ImageView) elemento.findViewById(R.id.imagenIcono);
-            imagenI.setImageResource(monumentos[position].getImagenP());
+            imagenI.setImageResource(monumentos[posicion].getImagenP());
 
             return(elemento);
         }

@@ -11,8 +11,7 @@ import android.widget.TextView;
  * Created by Estela on 12/06/2016.
  */
 public class InformacionMonumento extends AppCompatActivity {
-   private TextView nombreM;
-    private TextView descripcionM;
+    private TextView nombreM, descripcionM;
     private ImageView imagenM;
 
     private void cargarComponentes(){
@@ -31,9 +30,9 @@ public class InformacionMonumento extends AppCompatActivity {
 
         cargarComponentes();
 
-        Bundle bundle = this.getIntent().getExtras();
-        nombreM.setText(bundle.getString("nombre"));
-        imagenM.setImageResource(bundle.getInt("imagen"));
-        descripcionM.setText(bundle.getString("descripcion"));
+        Bundle paquete = this.getIntent().getExtras();
+        nombreM.setText(paquete.getString("nombre"));
+        imagenM.setImageResource(paquete.getInt("imagen"));
+        descripcionM.setText(paquete.getString("descripcion"));
     }
 }

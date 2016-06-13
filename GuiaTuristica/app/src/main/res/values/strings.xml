@@ -2,5 +2,5 @@
     <string name="app_name">GuiaTuristica</string>
     <string name="seleccionar">Monumentos de Córdoba:</string>
     <string name="imgAlt">Imagen de un monumento</string>
-    <string name="cebecera">Guía Turística</string>
+    <string name="cebecera">Monumetos de Córdoba</string>
 </resources>

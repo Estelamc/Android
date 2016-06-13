@@ -8,15 +8,7 @@
     android:padding="20dp"
     tools:context="mucoes.guiaturistica.MainActivity">
 
-    <TextView
-        android:id="@+id/listaEt"
-        android:text="@string/seleccionar"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.1"
-        android:textSize="20sp"
-        android:textColor="#222038"
-        android:layout_marginBottom="5dp" />
+    <include layout="@layout/cabecera"></include>
 
     <ListView
         android:id="@+id/lista"
