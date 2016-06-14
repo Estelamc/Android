@@ -11,7 +11,7 @@
         android:id="@+id/nombreM"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Small Text"
+        android:text="Nombre Monumento"
         android:layout_weight="0.1"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -35,7 +35,7 @@
             android:id="@+id/descripcionM"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:text="New Text"
+            android:text="Descripción Monumento"
             android:layout_gravity="end"/>
     </ScrollView>
 </LinearLayout>

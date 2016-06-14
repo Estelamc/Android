@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">El Tiempo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Configuración</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="change_city">Cambiar ciudad</string>
+    <string name="open_weather_maps_app_id">677a86d851969daa188c204c903b8f57</string>
+
+    <string name="weather_sunny">&#xf00d;</string>
+    <string name="weather_clear_night">&#xf02e;</string>
+    <string name="weather_foggy">&#xf014;</string>
+    <string name="weather_cloudy">&#xf013;</string>
+    <string name="weather_rainy">&#xf019;</string>
+    <string name="weather_snowy">&#xf01b;</string>
+    <string name="weather_thunder">&#xf01e;</string>
+    <string name="weather_drizzle">&#xf01c;</string>
+
+    <string name="place_not_found">No se ha encontrado el tiempo en esa ciudad</string>
+
+</resources>
