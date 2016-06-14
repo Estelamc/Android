@@ -1,0 +1,213 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity_Divisas_mucoe">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.8"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Conversor de Divisas"
+            android:gravity="center"
+            android:id="@+id/textoDivisas"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:background="#384c6e" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cantidad:"
+            android:id="@+id/textoCantidad"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:textColor="#384c6e" />
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/textoCantidadEditable"
+            android:layout_weight="1"
+            android:background="#e6e6e6"
+            android:gravity="center"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="EU > USD"
+                android:id="@+id/bEU_USD"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:background="#384c6e"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="USD > EU"
+                android:id="@+id/bUSD_EU"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:background="#384c6e"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="EU > JPY"
+                android:id="@+id/bEU_JPY"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:background="#384c6e"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="JPY > EU"
+                android:id="@+id/bJPY_EU"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:background="#384c6e"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="EU > BGN"
+                android:id="@+id/bEU_BGN"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:background="#384c6e"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="BGN > EU"
+                android:id="@+id/bBGN_EU"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:background="#384c6e"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Resultado:"
+            android:id="@+id/textoResultado"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:textColor="#384c6e" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:id="@+id/textoResultadoEditable"
+            android:padding="20px"
+            android:background="#e6e6e6"
+            android:layout_weight="1"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estela Muñoz Cordón"
+            android:id="@+id/textoNombre"
+            android:textSize="25dp"
+            android:textColor="#384c6e"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
