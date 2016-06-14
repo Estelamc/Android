@@ -2,7 +2,6 @@ package com.example.mucoes.tiempo;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
@@ -20,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new WeatherFragment())
+                    .add(R.id.container, new FragmentoTiempo())
                     .commit();
         }
     }
@@ -57,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void changeCity(String city) {
-        WeatherFragment wf = (WeatherFragment) getSupportFragmentManager()
+        FragmentoTiempo wf = (FragmentoTiempo) getSupportFragmentManager()
                 .findFragmentById(R.id.container);
-        wf.changeCity(city);
-        new CityPreference(this).setCity(city);
+        wf.cambiarCiudad(city);
+        new CiudadPreferencia(this).setCity(city);
     }
 }
